@@ -1,0 +1,20 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    cout << "**********************Sprint150!*****************************" << endl;
+    int leapYear;
+    cout<<"Enter the Number :";
+    cin>>leapYear;
+    if(leapYear%400==0) {
+        cout<<leapYear<<" Is a leap year" <<endl;
+    }
+    if(leapYear%4==0&&leapYear%100!=0) {
+        cout<<leapYear<<" Is a leap year" <<endl;
+    }
+     else{
+       cout<<leapYear<<" Is not a leap year" <<endl;
+     } 
+    return 0;
+}
