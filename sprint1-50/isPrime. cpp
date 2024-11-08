@@ -1,0 +1,23 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    cout << "**********************Sprint150!*****************************" << endl;
+    int primeNum;
+    bool isPrime=true ;
+    cout<<"Enter the Number :";
+    cin>>primeNum;
+    for(int i=2; i<primeNum; i++) {
+        if(primeNum%i==0) {
+            isPrime=false;
+        }
+    }
+     if(isPrime) {
+      cout<<primeNum<<" Is a prime number" <<endl;
+     }
+      else{
+           cout<<primeNum<<" Is not a prime number" <<endl;
+      } 
+    return 0;
+}
