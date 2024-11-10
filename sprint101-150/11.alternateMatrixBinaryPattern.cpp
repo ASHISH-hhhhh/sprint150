@@ -9,7 +9,9 @@ int main()
     cout<<"Enter the Number:" ;
     cin>>number;
       for(int i=1;i<=number;i++){
-       notS=!notS;
+         if(number%2==0){
+            notS=!notS;
+          }
        for(int j=1;j<=number;j++){
         cout<<notS;
            notS=!notS;
