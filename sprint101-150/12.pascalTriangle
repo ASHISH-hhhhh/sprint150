@@ -1,0 +1,29 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    cout << "**********************Sprint150!*****************************" << endl;
+    int number;
+    cout<<"Enter the Number:" ;
+    cin>>number;
+    for(int i=1; i<=number; i++) {
+        for(int sp=1; sp<=number-i; sp++) {
+            cout<<" ";
+        }
+        for(int j=i; j<=i; j++) {
+            cout<<1<<" ";
+        }
+        for(int sp2=2; sp2<=i-1; sp2++) {
+            cout<<i-1<<" ";
+        }
+        for(int j2=i; j2<=i; j2++) {
+            if(j2==1) {
+                continue;
+            }
+            cout<<1;
+        }
+        cout<<endl;
+    }
+    return 0;
+}
